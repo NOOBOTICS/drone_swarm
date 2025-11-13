@@ -1,0 +1,58 @@
+[0.175s] Invoking command in '/home/nobel/drone_ws/build/drone_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nobel/drone_ws/build/drone_description -- -j16 -l16
+[0.193s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.284s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[0.304s] -- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+[0.304s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.360s] -- Added test 'lint_cmake' to check CMake code style
+[0.361s] -- Added test 'xmllint' to check XML markup files
+[0.361s] -- Configuring done
+[0.363s] -- Generating done
+[0.364s] -- Build files have been written to: /home/nobel/drone_ws/build/drone_description
+[0.384s] Invoked command in '/home/nobel/drone_ws/build/drone_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nobel/drone_ws/build/drone_description -- -j16 -l16
+[0.393s] Invoking command in '/home/nobel/drone_ws/build/drone_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nobel/drone_ws/build/drone_description
+[0.399s] -- Install configuration: ""
+[0.399s] -- Up-to-date: /home/nobel/drone_ws/install/drone_description/share/drone_description/launch
+[0.399s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/rviz
+[0.399s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone
+[0.399s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/part_2.part
+[0.399s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/rotor_(1).stl
+[0.399s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/base_link.stl
+[0.400s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/stator_(1).part
+[0.400s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/bearing_(1).part
+[0.400s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/base.part
+[0.400s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/part_3.part
+[0.400s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/bearing.part
+[0.400s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/robot.urdf
+[0.400s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/part_3.stl
+[0.400s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/rotor_(1).part
+[0.401s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/base_link.part
+[0.401s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/part_1.stl
+[0.401s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/bearing_(1).stl
+[0.401s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/part_708.part
+[0.401s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/part_1.part
+[0.401s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/part_708.stl
+[0.401s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/bearing.stl
+[0.401s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/shaft.stl
+[0.401s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/part_2.stl
+[0.401s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/shaft.part
+[0.401s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/config.json
+[0.401s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/stator_(1).stl
+[0.401s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone/base.stl
+[0.403s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone2
+[0.403s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone2/config.json
+[0.403s] -- Up-to-date: /home/nobel/drone_ws/install/drone_description/share/ament_index/resource_index/package_run_dependencies/drone_description
+[0.403s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/ament_index/resource_index/parent_prefix_path/drone_description
+[0.403s] -- Up-to-date: /home/nobel/drone_ws/install/drone_description/share/drone_description/environment/ament_prefix_path.sh
+[0.403s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/environment/ament_prefix_path.dsv
+[0.404s] -- Up-to-date: /home/nobel/drone_ws/install/drone_description/share/drone_description/environment/path.sh
+[0.404s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/environment/path.dsv
+[0.404s] -- Up-to-date: /home/nobel/drone_ws/install/drone_description/share/drone_description/local_setup.bash
+[0.404s] -- Up-to-date: /home/nobel/drone_ws/install/drone_description/share/drone_description/local_setup.sh
+[0.404s] -- Up-to-date: /home/nobel/drone_ws/install/drone_description/share/drone_description/local_setup.zsh
+[0.404s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/local_setup.dsv
+[0.404s] -- Installing: /home/nobel/drone_ws/install/drone_description/share/drone_description/package.dsv
+[0.404s] -- Up-to-date: /home/nobel/drone_ws/install/drone_description/share/ament_index/resource_index/packages/drone_description
+[0.404s] -- Up-to-date: /home/nobel/drone_ws/install/drone_description/share/drone_description/cmake/drone_descriptionConfig.cmake
+[0.404s] -- Up-to-date: /home/nobel/drone_ws/install/drone_description/share/drone_description/cmake/drone_descriptionConfig-version.cmake
+[0.404s] -- Up-to-date: /home/nobel/drone_ws/install/drone_description/share/drone_description/package.xml
+[0.405s] Invoked command in '/home/nobel/drone_ws/build/drone_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nobel/drone_ws/build/drone_description

@@ -1,0 +1,8 @@
+gmake: Warning: File 'Makefile' has modification time 13558 s in the future
+gmake: warning:  Clock skew detected.  Your build may be incomplete.
+[31mCMake Error at cmake_install.cmake:46 (file):
+  file INSTALL cannot find
+  "/home/nobel/drone_ws/src/drone_description/meshes": No such file or
+  directory.
+
+[0m

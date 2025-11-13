@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/description_node.dir/src/description_node.cpp.o -o description_node 

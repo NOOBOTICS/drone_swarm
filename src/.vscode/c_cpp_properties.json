@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/nobel/colcon_ws/install/realsense_gazebo_plugin/include/**",
+        "/home/nobel/colcon_ws/install/linkattacher_msgs/include/**",
+        "/home/nobel/Drone_Related/Drones_Library/follow_drone_ws/install/sjtu_drone_description/include/**",
+        "/home/nobel/ROS2_Nav2/ros2_nav2/turtlebot3_ws/install/turtlebot3_gazebo/include/**",
+        "/home/nobel/ROS2_Nav2/ros2_nav2/turtlebot3_ws/install/turtlebot3_fake_node/include/**",
+        "/home/nobel/workspace_arm/IRoC_U_arm/arm_ws/install/arm_interface_pkg/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/nobel/drone_ws/src/drone_description/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
