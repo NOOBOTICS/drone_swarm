@@ -1,0 +1,17 @@
+[0.468s] Invoking command in '/home/nobel/drone_ws/build/drone_control': PYTHONPATH=/home/nobel/drone_ws/build/drone_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nobel/drone_ws/install/drone_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nobel/drone_ws/build/drone_control/build --no-deps symlink_data
+[0.640s] running develop
+[0.753s] running egg_info
+[0.753s] writing drone_control.egg-info/PKG-INFO
+[0.753s] writing dependency_links to drone_control.egg-info/dependency_links.txt
+[0.753s] writing entry points to drone_control.egg-info/entry_points.txt
+[0.753s] writing requirements to drone_control.egg-info/requires.txt
+[0.753s] writing top-level names to drone_control.egg-info/top_level.txt
+[0.755s] reading manifest file 'drone_control.egg-info/SOURCES.txt'
+[0.755s] writing manifest file 'drone_control.egg-info/SOURCES.txt'
+[0.756s] running build_ext
+[0.756s] Creating /home/nobel/drone_ws/install/drone_control/lib/python3.10/site-packages/drone-control.egg-link (link to .)
+[0.757s] Installing drone_control_node script to /home/nobel/drone_ws/install/drone_control/lib/drone_control
+[0.757s] 
+[0.757s] Installed /home/nobel/drone_ws/build/drone_control
+[0.757s] running symlink_data
+[0.779s] Invoked command in '/home/nobel/drone_ws/build/drone_control' returned '0': PYTHONPATH=/home/nobel/drone_ws/build/drone_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nobel/drone_ws/install/drone_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nobel/drone_ws/build/drone_control/build --no-deps symlink_data

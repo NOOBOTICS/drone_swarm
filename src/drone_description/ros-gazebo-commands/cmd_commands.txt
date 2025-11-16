@@ -1,0 +1,9 @@
+For visualizin urdf in rviz: ros2 launch urdf_tutorial display.launch.py model:=/home/nobel/drone_ws/src/drone_description/drone1/robot.urdf
+
+For spawnning robot: 1) ros2 run robot_state_publisher robot_state_publisher --ros-args -p robot_description:="$(xacro /home/nobel/drone_ws/install/drone_description/share/drone_description/drone1/main.urdf.xacro)" 
+2) ros2 launch ros_gz_sim gz_sim.launch.py gz_args:="empty.sdf"
+3) ros2 run ros_gz_sim create   -name drone1   -topic robot_description   -x 2.0   -y 0   -z 0.3
+
+
+
+

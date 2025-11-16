@@ -1,0 +1,46 @@
+[0.007s] Invoking command in '/home/nobel/drone_ws/build/drone_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nobel/drone_ws/install/drone_control:/opt/ros/humble /usr/bin/cmake /home/nobel/drone_ws/src/drone_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nobel/drone_ws/install/drone_description
+[0.019s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.098s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.102s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[0.122s] -- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+[0.122s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.180s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.180s] -- Added test 'lint_cmake' to check CMake code style
+[0.180s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.181s] -- Added test 'xmllint' to check XML markup files
+[0.182s] -- Configuring done
+[0.183s] -- Generating done
+[0.184s] -- Build files have been written to: /home/nobel/drone_ws/build/drone_description
+[0.187s] Invoked command in '/home/nobel/drone_ws/build/drone_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nobel/drone_ws/install/drone_control:/opt/ros/humble /usr/bin/cmake /home/nobel/drone_ws/src/drone_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nobel/drone_ws/install/drone_description
+[0.189s] Invoking command in '/home/nobel/drone_ws/build/drone_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nobel/drone_ws/install/drone_control:/opt/ros/humble /usr/bin/cmake --build /home/nobel/drone_ws/build/drone_description -- -j16 -l16
+[0.220s] Invoked command in '/home/nobel/drone_ws/build/drone_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nobel/drone_ws/install/drone_control:/opt/ros/humble /usr/bin/cmake --build /home/nobel/drone_ws/build/drone_description -- -j16 -l16
+[0.227s] Invoking command in '/home/nobel/drone_ws/build/drone_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nobel/drone_ws/install/drone_control:/opt/ros/humble /usr/bin/cmake --install /home/nobel/drone_ws/build/drone_description
+[0.235s] -- Install configuration: ""
+[0.236s] -- Execute custom install script
+[0.236s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/drone_description/launch/display.launch.py
+[0.236s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/drone_description/launch/display.launch.xml
+[0.236s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/drone_description/rviz/drone_conf.rviz
+[0.236s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone1/base.part
+[0.236s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone1/base.stl
+[0.237s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone1/config.json
+[0.237s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone1/m1.part
+[0.237s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone1/m1.stl
+[0.237s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone1/m2.part
+[0.237s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone1/m2.stl
+[0.237s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/drone_description/drone1/robot.urdf
+[0.237s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/ament_index/resource_index/package_run_dependencies/drone_description
+[0.237s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/ament_index/resource_index/parent_prefix_path/drone_description
+[0.237s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/drone_description/environment/ament_prefix_path.sh
+[0.237s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/drone_description/environment/ament_prefix_path.dsv
+[0.237s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/drone_description/environment/path.sh
+[0.237s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/drone_description/environment/path.dsv
+[0.237s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/drone_description/local_setup.bash
+[0.237s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/drone_description/local_setup.sh
+[0.237s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/drone_description/local_setup.zsh
+[0.237s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/drone_description/local_setup.dsv
+[0.237s] -- Symlinking: /home/nobel/drone_ws/install/drone_description/share/drone_description/package.dsv
+[0.244s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/ament_index/resource_index/packages/drone_description
+[0.244s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/drone_description/cmake/drone_descriptionConfig.cmake
+[0.244s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/drone_description/cmake/drone_descriptionConfig-version.cmake
+[0.244s] -- Up-to-date symlink: /home/nobel/drone_ws/install/drone_description/share/drone_description/package.xml
+[0.246s] Invoked command in '/home/nobel/drone_ws/build/drone_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nobel/drone_ws/install/drone_control:/opt/ros/humble /usr/bin/cmake --install /home/nobel/drone_ws/build/drone_description

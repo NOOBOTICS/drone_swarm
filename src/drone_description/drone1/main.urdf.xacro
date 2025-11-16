@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<!-- when we add xacro extension we ad xmlns:xacro attribute to robot tag -->
+<robot name="drone" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- file which is included should not have a name in robot tag -->
+    <xacro:include filename="robot.urdf.xacro"/>
+    
+
+</robot>

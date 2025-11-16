@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+
+<!-- when we add xacro extension we ad xmlns:xacro attribute to robot tag -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<!-- root link added to avoid simulation issues -->
+<link name = "root_link"/> 
+
+<link name="base_link">
+<visual>
+<origin xyz="-0.010922405541071378288 -0.050687372808196712315 0.0082303361216907733322" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://drone_description/drone1/base.stl"/>
+</geometry>
+<material name="base_material">
+<color rgba="0.34901960784313723618 0.37647058823529411242 0.4000000000000000222 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.010922405541071378288 -0.050687372808196712315 0.0082303361216907733322" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://drone_description/drone1/base.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0.0020193639985476314475 -0.04797210447996088506 -0.054438384411374975136" rpy="0 0 0"/>
+<mass value="2.9865324996216551234" />
+<inertia ixx="0.0076214365330443808663" ixy="7.1210927761971377534e-07"  ixz="-0.00020473517711343844176" iyy="0.0098111566164555286812" iyz="-3.5421189706239930048e-06" izz="0.015371407582968491315" />
+</inertial>
+</link>
+
+<!-- root link added as the tree root to avoid simulation issues -->
+<joint name= "rt" type="fixed">
+  <parent link="root_link"/>
+  <child link="base_link"/>
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+</joint>
+
+<link name="m2">
+<visual>
+<origin xyz="-0.10725912314167362904 0.11437019281877841559 -0.045263863433265959235" rpy="-3.141592628495006867 -1.7595318036328844588e-08 -2.4868903667608668032e-33" />
+<geometry>
+<mesh filename="package://drone_description/drone1/m2.stl"/>
+</geometry>
+<material name="m2_material">
+<color rgba="0.90980392156862743835 0.67843137254901964006 0.1372549019607843257 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.10725912314167362904 0.11437019281877841559 -0.045263863433265959235" rpy="-3.141592628495006867 -1.7595318036328844588e-08 -2.4868903667608668032e-33" />
+<geometry>
+<mesh filename="package://drone_description/drone1/m2.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="5.2654240606797575452e-06 -5.2164378350758542005e-06 -0.021069698945348696445" rpy="0 0 0"/>
+<mass value="0.049861849725314696946" />
+<inertia ixx="2.3940760765368335932e-05" ixy="-1.6932394712484813876e-05"  ixz="-5.8951667486996619654e-10" iyy="2.5426849844098468623e-05" iyz="6.1193920654251661781e-10" izz="3.7913165632625183657e-05" />
+</inertial>
+</link>
+
+<joint name="m1j" type="continuous">
+<origin xyz="-0.11579456795951663384 -0.16606229050820392468 -0.040486588822067667848" rpy="3.141592628495006867 -1.7595318159740281071e-08 4.4155075239452205801e-16" />
+<parent link="base_link" />
+<child link="m2" />
+<axis xyz="0 0 1"/>
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="m1">
+<visual>
+<origin xyz="0.1309088489691626056 0.11425459977510671328 -0.066263863433265984826" rpy="-3.141592628495006867 -1.7595318083729592483e-08 1.4677023703282848958e-32" />
+<geometry>
+<mesh filename="package://drone_description/drone1/m1.stl"/>
+</geometry>
+<material name="m1_material">
+<color rgba="0.90980392156862743835 0.67843137254901964006 0.1372549019607843257 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.1309088489691626056 0.11425459977510671328 -0.066263863433265984826" rpy="-3.141592628495006867 -1.7595318083729592483e-08 1.4677023703282848958e-32" />
+<geometry>
+<mesh filename="package://drone_description/drone1/m1.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="4.2237630752672838952e-06 6.0931709227416168737e-06 -0.021067970020245265633" rpy="0 0 0"/>
+<mass value="0.04984733554438967873" />
+<inertia ixx="2.0897559351174610834e-05" ixy="1.651831312562608182e-05"  ixz="-5.0331475382609120472e-10" iyy="2.8461381372270851196e-05" iyz="-6.8375013046015726761e-10" izz="3.7906055084567989407e-05" />
+</inertial>
+</link>
+
+<joint name="m4j" type="continuous">
+<origin xyz="0.12312849079376703143 -0.16704747399866010094 -0.040486584593417744571" rpy="3.141592628495006867 -1.7595317991062034075e-08 4.4155074919600357487e-16" />
+<parent link="base_link" />
+<child link="m1" />
+<axis xyz="0 0 1"/>
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="m2_2">
+<visual>
+<origin xyz="-0.10725912314167367068 0.11437019281877838783 -0.045263863433265959235" rpy="-3.141592628495006867 -1.7595318036328844588e-08 -4.379057701015054319e-47" />
+<geometry>
+<mesh filename="package://drone_description/drone1/m2.stl"/>
+</geometry>
+<material name="m2_material">
+<color rgba="0.90980392156862743835 0.67843137254901964006 0.1372549019607843257 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.10725912314167367068 0.11437019281877838783 -0.045263863433265959235" rpy="-3.141592628495006867 -1.7595318036328844588e-08 -4.379057701015054319e-47" />
+<geometry>
+<mesh filename="package://drone_description/drone1/m2.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="5.2654240606381241818e-06 -5.2164378351036097762e-06 -0.021069698945348696445" rpy="0 0 0"/>
+<mass value="0.049861849725314696946" />
+<inertia ixx="2.3940760765368335932e-05" ixy="-1.6932394712484813876e-05"  ixz="-5.8951667486996619654e-10" iyy="2.5426849844098468623e-05" iyz="6.1193920654251661781e-10" izz="3.7913165632625183657e-05" />
+</inertial>
+</link>
+
+<joint name="m3j" type="continuous">
+<origin xyz="0.12312849224315275398 0.071004267596130904439 -0.040486590567275132502" rpy="3.141592628495006867 -1.7595318036328834662e-08 4.4155074836731327976e-16" />
+<parent link="base_link" />
+<child link="m2_2" />
+<axis xyz="0 0 1"/>
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="m1_2">
+<visual>
+<origin xyz="0.13090884896916263336 0.11425459977510671328 -0.066263863433265984826" rpy="-3.141592628495006867 -1.7595318083729592483e-08 5.6986853119143905553e-33" />
+<geometry>
+<mesh filename="package://drone_description/drone1/m1.stl"/>
+</geometry>
+<material name="m1_material">
+<color rgba="0.90980392156862743835 0.67843137254901964006 0.1372549019607843257 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.13090884896916263336 0.11425459977510671328 -0.066263863433265984826" rpy="-3.141592628495006867 -1.7595318083729592483e-08 5.6986853119143905553e-33" />
+<geometry>
+<mesh filename="package://drone_description/drone1/m1.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="4.2237630752950394708e-06 6.0931709227416168737e-06 -0.021067970020245265633" rpy="0 0 0"/>
+<mass value="0.04984733554438967873" />
+<inertia ixx="2.0897559351174610834e-05" ixy="1.651831312562608182e-05"  ixz="-5.0331475382609120472e-10" iyy="2.8461381372270851196e-05" iyz="-6.8375013046015726761e-10" izz="3.7906055084567989407e-05" />
+</inertial>
+</link>
+
+<joint name="m2j" type="continuous">
+<origin xyz="-0.11503947986768138512 0.070888674552459035594 -0.040486594755015530012" rpy="3.141592628495006867 -1.7595318106301534911e-08 4.415507508303435102e-16" />
+<parent link="base_link" />
+<child link="m1_2" />
+<axis xyz="0 0 1"/>
+<joint_properties friction="0.0"/>
+</joint>
+
+
+</robot>

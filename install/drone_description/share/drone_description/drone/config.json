@@ -1,8 +1,0 @@
-{
-    "documentId": "1c0b12c02e4ad8baa64745a7",
-    "outputFormat": "urdf",
-    "packageName": "drone_description/drone",
-    "robotName": "drone",
-    "assemblyName": "F330_Assembly"
-
-}

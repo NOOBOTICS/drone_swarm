@@ -1,0 +1,46 @@
+<launch>
+
+    <let name="urdf_drone1" value="$(find-pkg-share drone_description)/drone1/main_multi.urdf.xacro"/>
+    <let name="urdf_drone2" value="$(find-pkg-share drone_description)/drone1/main_multi.urdf.xacro"/>
+
+    <let name="rviz_config" value="$(find-pkg-share drone_description)/rviz/drone_conf.rviz"/>
+
+
+    <!-- ====================== DRONE 1 ====================== -->
+    <group>
+        <push-ros-namespace namespace="drone1"/>
+
+        <node pkg="robot_state_publisher" exec="robot_state_publisher" output="screen">
+            <param name="robot_description"
+                value="$(command 'xacro $(var urdf_drone1) prefix:=drone1_')" />
+        </node>
+
+        <node pkg="ros_gz_sim" exec="create"
+              args="-name drone1 -topic /drone1/robot_description -x 0 -y 0 -z 0.3"/>
+    </group>
+
+
+    <!-- ====================== DRONE 2 ====================== -->
+    <group>
+        <push-ros-namespace namespace="drone2"/>
+
+        <node pkg="robot_state_publisher" exec="robot_state_publisher" output="screen">
+            <param name="robot_description"
+                value="$(command 'xacro $(var urdf_drone2) prefix:=drone2_')" />
+        </node>
+
+        <node pkg="ros_gz_sim" exec="create"
+              args="-name drone2 -topic /drone2/robot_description -x 1.0 -y 0 -z 0.3"/>
+    </group>
+
+
+    <!-- ====================== Gazebo World ====================== -->
+     <include file="$(find-pkg-share ros_gz_sim)/launch/gz_sim.launch.py">
+        <arg name="gz_args" value="empty.sdf -r"/>
+    </include> 
+
+    <!-- ====================== RViz ====================== -->
+    <node pkg="rviz2" exec="rviz2" output="screen"
+          args="-d $(var rviz_config)"/>
+
+</launch>
